@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Advance Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+
+        @font-face {
+            font-family: 'Arita-buri';
+            src: url('Fonts/Arita-buriM.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Arita-buri', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2a2a2a; /* Dark background */
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+            overflow: hidden; /* Prevent normal scrolling */
+            cursor: url('Cursor/MouseCursor1.png'), auto;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 1200vh; /* Total height for all backgrounds */
+            overflow: hidden;
+        }
+
+        .background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Each background fills the screen height */
+    background-size: cover;
+    background-position: center;
+}
+
+.background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole area without stretching */
+    z-index: -1; /* Ensures the video is in the background */
+}
+
+.transparent-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%; /* Control the width of the transparent box */
+    max-width: 600px; /* Maximum width */
+}
+
+.background1 {
+    background-image: url(''); /* Keep for fallback image */
+}
+
+.background2 {
+    background-image: url('About Me/Floor_of_General_Works.png');
+}
+
+
+        .background3 {
+            background-image: url('About Me/Floor_of_History.png');
+        }
+
+        .background4 {
+            background-image: url('About Me/Floor_of_Technological_Sciences.png');
+        }
+
+        .background5 {
+            background-image: url('About Me/Floor_of_Literature.png');
+        }
+
+        .background6 {
+            background-image: url('About Me/Floor_of_Art.png');
+        }
+
+        .background7 {
+            background-image: url('About Me/Floor_of_Natural_Sciences.png');
+        }
+
+        .background8 {
+            background-image: url('About Me/Floor_of_Language.png');
+        }
+
+        .background9 {
+            background-image: url('About Me/Floor_of_Social_Sciences.png');
+        }
+
+        .background10 {
+            background-image: url('About Me/Floor_of_Philosophy.png');
+        }
+
+        .background11 {
+            background-image: url('About Me/Floor_of_Religion.png');
+        }
+
+        .background12 {
+            background-image: url('About Me/LoR About Me-12.jpg');
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00FFFF; 
+            margin-top: 20px; /* Add margin for spacing */
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 600px; 
+            margin: 20px 0;
+        }
+
+        img {
+            border-radius: 50%; /* Makes the profile picture round */
+            width: 150px; /* Set width for the profile picture */
+            height: 150px; /* Set height for the profile picture */
+            object-fit: cover; /* Keeps aspect ratio */
+            margin-bottom: 20px; /* Space below the image */
+        }
+
+        .button {
+            background-color: #00FFFF; 
+            color: black; 
+            padding: 10px 15px; 
+            font-size: 1em; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Removes underline from link */
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px; /* Add margin for spacing */
+        }
+
+        .button:hover {
+            background-color: #00B3B3;
+            cursor: url('Cursor/MouseCursor2.png'), auto;
+        }
+
+        /* Hide the audio element */
+        audio {
+            display: none; /* Make audio element invisible */
+        }
+
+        /* Mute button styles */
+        #mute-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Ensure it is on top */
+            cursor: url('Cursor/MouseCursor2.png'), auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgm" loop autoplay>
+        <source src="About Me/[ Library Of Ruina ] Poems of a Machine.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- First Background with Video -->
+        <div class="background background1">
+            <video autoplay muted loop>
+                <source src="About Me/[Video]TitleBackground_Loop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="transparent-box">
+                <h1>About Me (나에 대해)</h1>
+                <img src="About Me/Me.jpg" alt="Profile Picture">
+                <p><strong>Introduction:</strong> Codename Unit for no reason at all, planning to be a gamedeveloper</p>
+                <p><strong>Personal Info:</strong> I'm 18 years old, Horoscope is Aquarius. My country is the Philippines.</p>
+            </div>
+        </div>
+    
+        <!-- Additional Backgrounds with Transparent Boxes -->
+        <div class="background background2">
+            <div class="transparent-box">
+                <h2>Floor of General Works (일반 작업 층)</h2>
+                <p><strong>Interests:</strong> My interests include game development, art, and music.
+                    I enjoy exploring different genres and styles to enhance my creative work.</p>
+                <p>I’m a versatile creator, balancing game development with a love for digital art and music.
+                    I use Krita a drawing application along with using my drawing pad, exploring styles that complement my games.
+                    My hobbies shape my projects, adding depth and variety to each creation.</p>
+            </div>
+        </div>
+    
+        <div class="background background3">
+            <div class="transparent-box">
+                <h2>Floor of History (역사 층)</h2>
+                <p><strong>Experience:</strong> My journey in game development so far is 3D on Unity & Blender.
+                I've developed skills in C# and Unity and am excited to work on future projects.</p>
+                <p>Growing up, I was known for my stubbornness, which turned into perseverance—a trait that fuels my solo game development today.
+                From childhood to now, I've evolved my skills and turned that determination into a passion for building games.</p>
+            </div>
+        </div>
+    
+        <div class="background background4">
+            <div class="transparent-box">
+                <h2>Floor of Technological Sciences (기술 과학 층)</h2>
+                <p>Here, I cover the technology I use. I primarily work with Unity, Blender, and C# for scripting.
+                 These tools help me bring ideas to life, while staying agile in learning new techniques as a solo developer.</p>
+            </div>
+        </div>
+    
+        <div class="background background5">
+            <div class="transparent-box">
+                <h2>Floor of Literature (문학 층)</h2>
+                <p>I enjoy reading works like "The 48 Laws of Power," "Atomic Habits," "Life's little Introduction Book," and "The 7 Habits."
+                These books inspire me to grow from a dreamer to be a game developer, honing both my strategic thinking and self-discipline.</p>
+            </div>
+        </div>
+    
+        <div class="background background6">
+            <div class="transparent-box">
+                <h2>Floor of Art (예술 층)</h2>
+                <p>As a solo developer, I tackle art using Blender and occasionally seek out resources for textures and character designs.
+                Developing my own assets is time-consuming but allows me to keep my creative vision consistent.</p>
+                <p>In addition to game design, I am also a pianist and an art enthusiast.
+                I often draw inspiration from specific Japanese singers and integrate musical ideas into my games,
+                creating immersive experiences.</p>
+            </div>
+        </div>
+    
+        <div class="background background7">
+            <div class="transparent-box">
+                <h2>Floor of Natural Sciences (자연 과학 층)</h2>
+                <p><strong>Foundation:</strong> In my games, natural science concepts are key to crafting engaging player interactions.
+                One dream project, a 3D third-person roguelike mystery game, explores themes of time travel and curing aging.
+                Physics and environmental elements here bring depth to the time-travel mechanics and player choices.
+                Another project, a 2D turn-based combat fantasy game, uses strategic, nature-inspired elements that enhance its modded fantasy world, merging realistic interactions with anime-style drama.</p>
+            </div>
+        </div>
+    
+        <div class="background background8">
+            <div class="transparent-box">
+                <h2>Floor of Language (언어 층)</h2>
+                <p>Language and culture play a big role in my creations, probably influenced by those specific games and animes.
+                My interest in Japanese music and storytelling has greatly influenced my creative style depending on the drama they have,
+                adding cultural depth to the stories I tell through games.
+                So much for moments on having those inriguing thoughts.</p>
+            </div>
+        </div>
+    
+        <div class="background background9">
+            <div class="transparent-box">
+                <h2>Floor of Social Sciences (사회 과학 층)</h2>
+                <p><strong>Favorite Games:</strong></p>
+                <ul>
+                    <li>Library of Ruina</li>
+                    <li>Reverse Collapse: Code Name Bakery</li>
+                    <li>Chrono Ark</li>
+                    <li>OMORI</li>
+                    <li>Darkwood</li>
+                    <li>This War of Mine</li>
+                    <li>Ender Lilies: Quietus of the Knights</li>
+                    <li>Frostpunk</li>
+                    <li>Limbus Company</li>
+                    <li>Genshin Impact</li>
+                    <li>Honkai Impact 3rd</li>
+                    <li>Blue Archive</li>
+                    <li>Girls' Frontline 2</li>
+                    <li>Dohna Dohna: Let's Do Bad Things Together</li>
+                </ul>
+            </div>
+        </div>        
+    
+        <div class="background background10">
+            <div class="transparent-box">
+                <h2>Floor of Philosophy (철학 층)</h2>
+                <p><strong>The Characters and Their Classifications:</strong></p>
+                <p><strong>Advanced Units:</strong></p>
+                <ul>
+                    <li><strong>Contractors</strong> (<span style="color:white;">White</span>) - The Neutral ones and the most advanced Advance units.</li>
+                    <li><strong>Mercenaries</strong> (<span style="color:red;">Red</span>) - The Pure Evil of the Advance units, like how mafia works.</li>
+                    <li><strong>Achievers</strong> (<span style="color:blue;">Blue</span>) - The Great People of the Advance units mostly Inventors.</li>
+                    <li><strong>Elites</strong> (<span style="color: rgb(208, 0, 232);">Purple</span>) - The Elite Members who's excellence on Space Craft with Automation.</li>
+                    <li><strong>Greed</strong> (<span style="color:lime;">Green</span>) - The Fallen Land that was once had tons of generous people.</li>
+                </ul>
+                <p><strong>Classifications/Rankings:</strong> (Arranged from top to bottom)</p>
+                <ul>
+                    <li><strong>Head of Command</strong> - The only Head of Commands are under the Contractors having the 1st, 2nd & 3rd</li>
+                    <li><strong>Masterminds</strong> - World changing advance units, due to list of records access of time and moments, overall best planners</li>
+                    <li><strong>High Rankings</strong> - 2 Types of High Rankings which are "The Right Hands" and "The Left Hands"</li>
+                    <li><strong>Higher Ups</strong> - The overall 3 which are Head of Command, Masterminds, & High Rankings</li>
+                    <li><strong>Middle Rankings</strong> - Mostly Officers and Veterans, or units that retired; Generals and Elite Members are in this position</li>
+                    <li><strong>Low Rankings</strong> - The young, new, and very young advance units groups/members are positioned here</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="background background11">
+            <div class="transparent-box">
+                <h2>Floor of Religion (종교 층)</h2>
+                <p><strong>Goals:</strong> My long-term goal is to establish my own game studio,
+                creating unique and immersive experiences that push the boundaries of storytelling and gameplay.
+                I dream of collaborating internationally, with a special interest in working with Korean developers,
+                whose games have deeply inspired my approach to game design.</p>
+
+            </div>
+        </div>
+    
+        <!-- Twelfth Background -->
+        <div class="background background12">
+            <div class="transparent-box">
+                <p><strong>My Socials:</strong></p>
+                <p>Follow me on my socials for updates and insights on my game development journey.</p>
+                <p>
+                    <a href="https://www.youtube.com/@unit614" target="_blank" style="color: white;">YouTube</a>, 
+                    <a href="https://twitter.com/" target="_blank" style="color: white;">Twitter</a>, 
+                    <a href="https://www.facebook.com/" target="_blank" style="color: white;">Facebook</a>, 
+                    <a href="https://www.instagram.com/" target="_blank" style="color: white;">Instagram</a>.
+                </p>
+                <a class="button" href="Introduction.html" aria-label="Back to Introduction">Return to Introduction</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mute Button -->
+    <button id="mute-button">Mute</button>
+
+    <script>
+        // Unmute the music after user interaction
+        document.addEventListener('click', function() {
+            const bgm = document.getElementById('bgm');
+            bgm.muted = false; // Unmute the audio
+            bgm.play(); // Play the audio
+        }, { once: true }); // Only run this once on the first click
+    
+        // Mute button functionality
+        const muteButton = document.getElementById('mute-button');
+        muteButton.addEventListener('click', function() {
+            const bgm = document.getElementById('bgm');
+            bgm.muted = !bgm.muted; // Toggle mute state
+            muteButton.textContent = bgm.muted ? 'Unmute' : 'Mute'; // Update button text
+        });
+    
+        // Handle visibility change to pause or resume music when switching tabs
+        document.addEventListener('visibilitychange', function() {
+            const bgm = document.getElementById('bgm');
+            if (document.hidden) {
+                bgm.pause(); // Pause the music if the tab is inactive
+            } else {
+                bgm.play(); // Resume the music when the tab becomes active
+            }
+        });
+    
+        // Smooth scrolling with control
+        let currentScroll = 0; // Current scroll position
+        let targetScroll = 0; // Target scroll position
+        let isScrolling = false; // Flag to check if scrolling is in progress
+    
+        window.addEventListener('wheel', function(e) {
+            e.preventDefault(); // Prevent default scroll behavior
+            if (isScrolling) return; // Prevent further scrolling if already scrolling
+            isScrolling = true; // Set scrolling flag
+
+            const scrollDuration = 600; // Adjust the duration for smooth scrolling
+
+            if (e.deltaY > 0) {
+                // Scroll down
+                targetScroll = Math.min(currentScroll + window.innerHeight, 12 * window.innerHeight); // Max scroll to the twelfth background
+            } else {
+                // Scroll up
+                targetScroll = Math.max(currentScroll - window.innerHeight, 0); // Min scroll to first background
+            }
+            currentScroll = targetScroll; // Update current scroll position
+            window.scrollTo({ top: currentScroll, behavior: 'smooth' });
+
+            // Reset scrolling flag after animation completes
+            setTimeout(() => {
+                isScrolling = false;
+            }, scrollDuration); // Ensure this duration matches the scroll behavior
+        }, { passive: false });
+
+    
+        // Update current scroll position on actual scroll
+        window.addEventListener('scroll', function() {
+            currentScroll = window.scrollY; // Update current scroll position
+        });
+
+        // Add event listener for mouse down on the whole document
+        document.addEventListener('mousedown', () => {
+            isMouseDown = true; // Set mouse down state
+            // Set cursor immediately to MouseCursor3.png
+            document.body.style.cursor = "url('Cursor/MouseCursor3.png'), auto"; // Set clicked cursor
+        });
+
+        let isMouseDown = false;
+
+        // Add event listener for mouse up on the whole document
+        document.addEventListener('mouseup', () => {
+            isMouseDown = false; // Reset mouse down state
+            // Reset cursor based on hover state
+            document.body.style.cursor = "url('Cursor/MouseCursor1.png'), auto"; // Reset to default cursor
+        });
+
+        // Add event listeners for each clickable element
+        clickableElements.forEach(element => {
+            element.addEventListener('mouseover', () => {
+                // Change cursor to MouseCursor3.png if mouse is down
+                document.body.style.cursor = isMouseDown ? "url('Cursor/MouseCursor3.png'), auto" : "url('Cursor/MouseCursor2.png'), auto"; // Set hover or clicked cursor
+            });
+
+            element.addEventListener('mouseout', () => {
+                // Reset cursor when not hovering
+                document.body.style.cursor = isMouseDown ? "url('Cursor/MouseCursor3.png'), auto" : "url('Cursor/MouseCursor1.png'), auto"; // Reset to default cursor
+            });
+
+            // Prevent background click event from firing
+            element.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+        });
+    </script>    
+</body>
+</html>
